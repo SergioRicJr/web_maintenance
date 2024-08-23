@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} flex justify-center items-center min-h-screen`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -26,7 +26,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
-            <ModeToggle className="fixed right-8 bottom-6" />
+            <ModeToggle className="fixed right-4 bottom-6" />
           </ThemeProvider>
       </body>
     </html>
