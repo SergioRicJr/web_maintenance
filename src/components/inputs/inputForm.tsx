@@ -20,7 +20,7 @@ export default function InputForm({ children, form, label, name }: InputFormProp
                     <FormControl>
                         {children(field)}
                     </FormControl>
-                    <FormMessage className='absolute w-60' />
+                    <FormMessage className='absolute w-60'/>
                 </FormItem>
             )}
         />
